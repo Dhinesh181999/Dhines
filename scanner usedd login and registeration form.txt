@@ -1,0 +1,88 @@
+Login.java 
+===========
+
+
+import java.util.Scanner;
+public class Login 
+{
+	public static void main(String[] args)
+	{
+		
+		Scanner scanner=new Scanner(System.in);
+		
+		String sysEmployeeName="Rajan";
+		String syspassword="1234";
+		
+		System.out.print("Enter Employee Name =>");
+		String EmployeeName=scanner.nextLine();
+		
+		System.out.print("Enter Password =>");
+		String password=scanner.nextLine();
+		
+		
+		if(sysEmployeeName.equals(EmployeeName))
+		{
+			if(syspassword.equals(password))
+			{
+				System.out.println("EMPLOYEE LOGGED-IN SUCCESSFULLY...............");
+			}
+			else
+			{
+				System.out.println("Invalid Password");
+			}
+		}
+		else
+			{
+				System.out.println("Invalid EmployeeName");
+				
+			}
+		}
+	}
+	
+	
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+Registration.java
+==================
+
+public class Registration {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Please enter your Firstname: ");
+        String firstname = input.nextLine();
+        
+        System.out.print("Please enter your Lastname: ");
+        String lastname = input.nextLine();
+
+        System.out.print("Please enter your Username: ");
+        String username = input.nextLine();
+
+        System.out.print("Please enter your Password: ");
+        String password = input.nextLine();
+        
+        System.out.print("Please enter your Email: ");
+        String email = input.nextLine();
+        
+        System.out.print("Please enter your Address: ");
+        String address = input.nextLine();
+        
+        System.out.print("Please enter your Location: ");
+        String location = input.nextLine();
+        
+        System.out.print("Please enter your mobile number: ");
+        long mobilenumber=input.nextLong();
+
+        System.out.println("\nThank you for registering!!!!!!!");
+        System.out.println("Firstname: " + firstname);
+        System.out.println("lastname: " + lastname);
+        System.out.println("username: " + username);
+        System.out.println("Password: " + password);
+        System.out.println("Email: " + email);
+        System.out.println("Address: "+ address);
+        System.out.println("Location: "+ location);
+        System.out.println("Mobilenumber:"+ mobilenumber);
+       
+    }
+}
